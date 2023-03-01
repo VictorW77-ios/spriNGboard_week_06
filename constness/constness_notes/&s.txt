@@ -1,0 +1,6 @@
+'&s' matches '&ncs' and '&c' when called by reference. Yet, it doesn't match when called by value. 
+
+This is because:
+-> A Call By Reference copies the param's address reference and assigns it to the func's argument. This allows the argument (passed to the function as string(10,'=') and the formal parameters (used in the functions as 'string s / & s' or 'string const s / & s') to reference the same address location. 
+
+-> A Call by Value copies the value of the argument to the formal params of the function and stores them in two separate memory locations, which is why two different locations are output when the formal param is called by value.

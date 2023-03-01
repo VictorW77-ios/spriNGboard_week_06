@@ -1,1 +1,2 @@
-These are my observations:
+'&ncs' before/after doesn't match in non_const_by_ref() because non_const_by_ref() properly takes in a non-const string ref '&s' and updates it with 's.append('has been modified'). If non_const_by_ref() or const_by_ref() is being passed a const string '&s', the reference won't be updated because it's constant; as well as when const_by_val() and non_const_by_val() are called since calling by value doesn't update the argument with .append().  
+

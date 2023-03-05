@@ -1,0 +1,11 @@
+func(5) -> is an rvalue because func(5) is a non-reference return type
+func(2+3) -> is an rvalue because it uses built-in '+' operation.
+func(int{5}) -> is an rvalue ref because it initializes the int 5.
+
+func(x) -> is an lvalue ref because when evaluated, it determines the identity of x. 
+func(x/2) -> is an rvalue because x is being computed on the right-hand side of an operation. 
+func(move(x)) -> is an xvalue return type of rvalue x, where rvalue invokes .move().
+
+func(y) -> is a const lvalue ref because it determines the identity of y when evaluated.
+func(y/2) -> is an rvalue  because it computes the result of an operation on the right-hand side.  
+func(move(y)) -> is an xvalue with a return type of a const rvalue ref to y, where the rvalue invokes .move().

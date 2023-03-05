@@ -14,14 +14,14 @@ void poke (Animal const & animal)
 class Cow : public Animal
 {
   public:
-    virtual void make_sound () const override
+    void make_sound () const override
     { cout << "moo" << endl; }
 };
 
 class FullCow : public Cow
 {
   public:
-    virtual void make_sound () const override
+    void make_sound () const override
     { cout << "Ooof - I ate too much" << endl; }
 };
 

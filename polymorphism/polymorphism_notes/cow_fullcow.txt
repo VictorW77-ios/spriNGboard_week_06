@@ -1,0 +1,1 @@
+FullCow was able to override Cow's make_sound() method because the derived classes (Cow, FullCow) are able to override the base class' (Animal) virtual function. In the absence of a specified 'virtual void ..' in Cow and FullCow, the derived class' version of make_sound() is automatically used by the compiler - so each respective sound is still output. 

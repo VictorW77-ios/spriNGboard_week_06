@@ -1,0 +1,3 @@
+Line 1: uses curly braces to initialize string 'x' with the str value "hello".
+Line 2: initializes string ref 'rx' and assigns it the value of 'x'.
+Line 3: initializes a string const ref 'crx' and assigns it the value of 'x'.

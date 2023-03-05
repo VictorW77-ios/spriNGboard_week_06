@@ -1,0 +1,1 @@
+The output for &x, &rx, and &crx all show the memory address for x since they are all references assigned to the value of x. This shows that x is the only real string object. 

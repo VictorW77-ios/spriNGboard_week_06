@@ -1,0 +1,1 @@
+According to cppreference, the final keyword ensures that a function is virtual and can't be overridden. The make_sound() funcs in Cow and FullCow are not virtual and both attempt to override the base class' make_sound() func.

@@ -1,0 +1,1 @@
+&crx.append() causes an error because &crx is a const ref assigned the value of x. .append() isn't being called on the object 'x' itself, it's being called on &crx; as a const, &crx cannot have an appended/modified output.

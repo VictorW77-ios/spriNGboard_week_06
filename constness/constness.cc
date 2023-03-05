@@ -21,14 +21,14 @@ void const_by_ref (string const & s) {
   cout << "const_by_ref() called on " << s << endl;
   cout << "  &s       = " << &s << endl;
   cout << "  s.size() = " << s.size() << endl;
-  s.append(" has been modified"); // LINE 1
+  //s.append(" has been modified"); // LINE 1
 }
 
 void const_by_val (string const s) {
   cout << "const_by_val() called on " << s << endl;
   cout << "  &s       = " << &s << endl;
   cout << "  s.size() = " << s.size() << endl;
-  s.append(" has been modified"); // LINE 2
+  //s.append(" has been modified"); // LINE 2
 }
 
 void overloaded_func (string & s)

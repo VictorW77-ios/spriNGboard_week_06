@@ -1,0 +1,1 @@
+After uncommenting Line1 and Line2, the compiler outputs a 'candidate expects 2 arguments, 1 provided' error since it expects .append() to be passed 2 arguments. However, the actual issue may be that .append() modifies the return value - which can't be done with constant values.

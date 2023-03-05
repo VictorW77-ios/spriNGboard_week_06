@@ -1,0 +1,1 @@
+The compiler particularly complains about binding reference of int& and int&& (lvalue and rvalue) in func(y) and func(move(y)). It fails because the compiler doesn't know what to output for const rvalues and const lvalues.

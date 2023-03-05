@@ -1,4 +1,4 @@
-func(5) -> is an rvalue because func(5) is a non-reference return type
+func(5) -> is an rvalue because func(5) is a non-reference temporary return type
 func(2+3) -> is an rvalue because it uses built-in '+' operation.
 func(int{5}) -> is an rvalue ref because it initializes the int 5.
 

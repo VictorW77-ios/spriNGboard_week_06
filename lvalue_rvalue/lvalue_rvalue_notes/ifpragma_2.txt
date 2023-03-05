@@ -1,0 +1,1 @@
+func(move(y)) -> compiler reads this as a const lvalue ref instead of reading it as a  const rvalue ref which is was originally, because there isn't a function with logic on what to return if there's a const rvalue ref (the 2nd #ifpragma). 

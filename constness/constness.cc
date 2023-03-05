@@ -98,7 +98,7 @@ int main ()
     string const cs = "const string";
     cout << "cs before: " << cs << endl;
     cout << "&cs = " << &cs << endl;
-    //non_const_by_ref(cs); // LINE 3
+    non_const_by_ref(cs); // LINE 3
     cout << "cs after:  " << cs << endl;
   }
 

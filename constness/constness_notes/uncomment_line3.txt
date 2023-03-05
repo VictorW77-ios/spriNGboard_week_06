@@ -1,0 +1,1 @@
+The compiler complains with a 'binding reference by type' error because 'cs' is a constant object being passed to the non_cont_by_ref() func. This would 'discard' the const qualifier type that's on the cs object. 

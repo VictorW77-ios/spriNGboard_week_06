@@ -14,7 +14,7 @@ void poke (Animal const & animal)
 class Cow : public Animal
 {
   public:
-    void make_sound () const override
+    void make_sound () const override final
     { cout << "moo" << endl; }
 };
 
